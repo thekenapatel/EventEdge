@@ -5,7 +5,7 @@ body {
 
 .container {
     background-color: aqua;
-    height: 73vh;
+    height: 560px;
     width: 100%;
     background-image: url("concert\ background.jpg");
     background-repeat: no-repeat;
@@ -22,20 +22,12 @@ body {
 }
 
 .logo-image {
-    height: 50px;
-    width: 100px;
-    align-items: center;
-    display: flex;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(248, 98, 173);
+    border-radius: 100%;
 }
 
-
-.main-logo {
-    background-image: url("pentagon\ shape.png");
-    background-repeat: no-repeat;
-    background-size: 60px;
-    background-position: center;
-    background-clip: content-box;
-}
 
 .left-part {
     margin-left: 200px;
@@ -76,10 +68,10 @@ body {
 }
 
 .logo-design {
-    font-family: "Carter One", system-ui;
+    font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: -30px;
+    font-size: 35px;
     display: flex;
     align-items: center;
 }
@@ -102,7 +94,6 @@ body {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 
@@ -125,6 +116,8 @@ body {
 
 .searchh {
     margin-left: 25px;
+    height: 21px;
+    width: 21px;
 }
 
 .right-search {
@@ -133,9 +126,11 @@ body {
     gap: 15px;
 }
 
-.otherss {
-    margin-right: 15px;
-    margin-left: 25px;
+.chevron {
+    margin-right: 25px;
+    margin-left: 30px;
+    height: 15px;
+    width: 15px;
 }
 
 .sub-search {
@@ -150,11 +145,11 @@ body {
     color: rgb(73, 72, 72);
 }
 
-.image-bar {
-    height: 21px;
-    width: 21px;
-}
 
+.location-icon {
+    height: 22px;
+    width: 22px;
+}
 
 .main-first {
     margin-top: 70px;
@@ -210,115 +205,745 @@ body {
 }
 
 .categories {
-    height: 60vh;
+    height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.sub-categories {
-    height: 50vh;
-    width: 80%;
+    flex-direction: column;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 18px;
     font-style: normal;
-    margin-top: 30px;
-
-
+    color: rgb(58, 58, 58);
 }
 
-.shapes-cat {
+
+.sub-categories {
+    margin-top: 60px;
     display: flex;
     align-items: center;
-    gap: 45px;
-    margin-top: 55px;
-    font-size: 22px;
-    color: rgb(51, 51, 51);
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    object-fit: cover;
+    height: 200px;
+    width: 75%;
 }
+
+.cat-head {
+    margin-top: 50px;
+    font-size: 28px;
+    color: rgb(20, 20, 20);
+    display: flex;
+    align-self: baseline;
+    margin-left: 12.5%;
+
+}
+
 
 .business {
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: rgb(63, 181, 249);
-    background-image: url("business.png");
-    background-repeat: no-repeat;
-    background-size: 220px;
-    background-position-x: -15px;
-    background-position-y: top;
-
-
-}
-
-.title {
-    margin-left: 30px;
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
+    background-color: #52D3D8;
 }
 
 .music {
+    background-color: #FFB534;
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: #FFC436;
-
-    background-image: url("music.png");
-    background-repeat: no-repeat;
-    background-size: 190px;
-    background-position: top;
 }
 
-.parties {
+.party {
+    background-color: #FFBDF7;
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: #FF8DC7;
-
-    background-image: url("party.png");
-    background-repeat: no-repeat;
-    background-size: 225px;
-    background-position: top;
 }
 
-.festivals {
+.holi {
+    background-color: #D2DE32;
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: #A6CF98;
-    background-image: url("holi.png");
-
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: bottom;
 }
 
-.health {
+.yoga {
+    background-color: #FFBE98;
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: #FF8F8F;
-
-    background-image: url("yoga.png");
-    background-repeat: no-repeat;
-    background-size: 350px;
-    background-position-x: -95px;
-    background-position-y: -25px;
+    margin-top: 20px;
 }
 
-.all-cat {
+.allcat {
+    background-color: #d998b9;
     height: 180px;
     width: 180px;
     border-radius: 100%;
-    background-color: #D63484;
-    background-image: url("allcat.png");
+    filter: brightness(50%);
+}
 
-    background-repeat: no-repeat;
-    background-size: 190px;
-    background-position-x: 20px;
-    background-position-y: center;
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.all-catinfo {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.all-catcard {
+    position: relative;
+}
+
+.popular-events {
+    height: fit-content;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.second-head {
+    height: 100px;
+    width: 76%;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.h1-head {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 28px;
+    font-style: normal;
+    color: rgb(58, 58, 58);
+    margin-left: 3px;
+}
+
+.head-names {
+    height: 50px;
+    width: 95%;
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 21px;
+    font-style: normal;
+    color: rgb(58, 58, 58);
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+
+.all {
+    margin: 10px 23px 10px 23px;
+}
+
+.today {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.tomorrow {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.this-week {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.this-weekend {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.next-week {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.next-weekend {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.this-month {
+    margin: 10px 23px 10px 23px;
+    color: rgb(146, 145, 145);
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 76%;
+    background-color: rgb(145, 145, 144);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.second-details {
+    height: 850px;
+    width: 76%;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 41px;
+    margin-top: 30px;
+}
+
+.box1 {
+    height: 400px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(244, 244, 244);
+}
+
+.poster1 {
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.poster2 {
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.poster3 {
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.poster4 {
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.poster5 {
+    height: 230px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.poster6 {
+    height: 230px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.box2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(244, 244, 244);
+}
+
+.box3 {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(244, 244, 244);
+}
+
+.box4 {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(244, 244, 244);
+}
+
+.box5 {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(244, 244, 244);
+}
+
+.box6 {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(244, 244, 244);
+}
+
+.featured {
+    height: 30px;
+    width: 90px;
+    border: 1px solid rgb(172, 164, 164);
+    background-color: rgb(47, 45, 45);
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
+    top: 3%;
+    left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(70%);
+}
+
+.star-image {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    padding: 11px;
+    margin-left: 350px;
+    margin-top: 176px;
+    border: 1px solid rgb(208, 208, 208);
+}
+
+
+.box1-color {
+    height: 140px;
+    width: 88%;
+    margin-top: 4px;
+    margin-left: 25px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 17px;
+    font-style: normal;
+    color: rgb(53, 53, 53);
+}
+
+.box1-location {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 14.3px;
+    font-style: normal;
+    color: rgb(102, 102, 102);
+    margin-top: 13px;
+}
+
+.box1-description {
+    height: 40px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14.3px;
+    font-style: normal;
+    color: rgb(91, 90, 90);
+}
+
+.box1-date {
+    font-weight: 90px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14.3px;
+    font-style: normal;
+}
+
+.box1-member {
+    color: rgb(248, 98, 173);
+    align-items: normal;
+    display: flex;
+    font-weight: 500;
+    gap: 3px;
+
+}
+
+.fill-star {
+    height: 16px;
+    width: 16px;
+}
+
+.rupee-note {
+    height: 16px;
+    width: 16px;
+}
+
+.box1-rupee {
+    color: #379237;
+    align-items: center;
+    display: flex;
+    gap: 3px;
+    border: 1px solid #91C483;
+    border-radius: 4px;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.allevent-desc {
+    height: 50px;
+    width: 350px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid rgb(163, 163, 163);
+    border-radius: 7px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14.3px;
+    font-style: normal;
+    font-weight: 600;
+    color: rgb(43, 43, 43);
+    margin-top: 60px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-curate-events {
+    height: fit-content;
+    width: 100%;
+    background-color: #fff5fb;
+    display: flex;
+    margin-top: 50px;
+}
+
+.third-inside {
+    height: 79%;
+    width: 1200px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-top: 80px;
+    color: #333333;
+}
+
+.third-head-name {
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
+}
+
+.third-types-name {
+    margin-top: 40px;
+    font-weight: 100;
+    font-size: 18.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.types1 {
+    display: flex;
+    gap: 16px;
+
+}
+
+.types2 {
+    display: flex;
+    gap: 16px;
+}
+
+.name {
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.name-showmore {
+    border: 2px solid #f862ad;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.type3 {
+    background-color: #f862ad;
+    height: 45px;
+    width: 235px;
+    color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.girl-bino {
+    height: 470px;
+    width: 470px;
+    margin-right: 130px;
+    transform: scaleX(-1);
+}
+
+.explore-events-world {
+    height: fit-content;
+    width: 100%;
+    margin-top: 100px;
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.fourth-inside {
+    height: 460px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+}
+
+.city {
+    height: 250px;
+    width: 292px;
+    background-color: #ffffff;
+    margin-top: 40px;
+    border-radius: 7px;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #00000000, #00000080);
+}
+
+.city-names {
+    display: flex;
+    gap: 40px;
+}
+
+.city-con {
+    position: relative;
+}
+
+.city-name {
+    position: absolute;
+    bottom: 9%;
+    left: 8%;
+    width: 150px;
+    height: 20px;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.flag-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    height: 25px;
+    width: 34px;
+    border-radius: 7px;
+    margin-right: 8px;
+}
+
+.more-city {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #db689f;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    margin-top: -7px;
+}
+
+.world-event {
+    font-size: 14px;
+    margin-left: 200px;
+    margin-top: 50px;
+    color: #333333;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.worldwide-trending-events {
+    height: 1400px;
+    width: 100%;
+}
+
+.hostevent-container {
+    height: fit-content;
+    width: 100%;
+    background-image: url(./pink\ background.jpg);
+    margin-top: 60px;
+}
+
+.host-inside {
+    height: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    padding-top: 55px;
+    display: flex;
+}
+
+.host-details {
+    height: 250px;
+    width: 550px;
+}
+
+.detail1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin-top: 50px;
+}
+
+.detail2 {
+    font-size: 25px;
+    font-weight: 500px;
+    color: #c5c3c3;
+    margin-top: 20px;
+}
+
+.detail3 {
+    margin-top: 70px;
+    display: flex;
+}
+
+.host-part1 {
+    font-size: 22px;
+    font-weight: 500px;
+    color: #555555;
+    margin-right: 40px;
+    background-color: white;
+    height: 50px;
+    width: 270px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.host-part2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dottt1 {
+    height: 6px;
+    width: 7px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+
+.dottt2 {
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.host-quote {
+    height: 430px;
+    width: 430px;
+
+    margin-left: 70px;
+    margin-top: -90px;
+}
+
+.hostevent-image {
+    height: 432px;
+    width: 800px;
+    margin-left: -190px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.discover-events {
+    height: 600px;
+    width: 100%;
+
+
 }
