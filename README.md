@@ -17,3 +17,7 @@ EventEdge is a website designed for managing events. Please note that this proje
 ## Usage
 - Use the website to navigate through the frontend and explore its current features.
 - Note that some functionalities may not be fully operational due to ongoing development.
+
+
+## Inspiration
+   This app is inspired by [AllEvents](https://allevents.in/). Built for learning and portfolio purposes.
